@@ -947,7 +947,8 @@ tr.is-highlight > :last-child { box-shadow: 12px 0 var(--fill-tertiary); }
               <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#ai-projects">AI Engineering</a></li>
+        <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
               </ul>
             </nav>
@@ -1021,7 +1022,77 @@ tr.is-highlight > :last-child { box-shadow: 12px 0 var(--fill-tertiary); }
             </ol>
           </section>
 
-          <section class="x-section" id="projects" aria-label="Projects">
+          <section class="x-section" id="ai-projects" aria-label="AI engineering projects">
+      <h2 class="x-label">AI Engineering</h2>
+      <ul class="x-rows">
+        <li class="x-row">
+          <div class="x-row__aside"><div class="x-thumb x-thumb--blank" aria-hidden="true">AI</div></div>
+          <div>
+            <h3><a href="http://rakeshburla.dpdns.org/dronedocs-production-rag/" target="_blank" rel="noopener">DroneDocs · Production RAG <span class="x-arrow" aria-hidden="true">↗</span></a></h3>
+            <p>Hybrid BM25 + vector retrieval with reranking and cited answers over drone docs, gated in CI by a golden eval. <span class="x-fig">43 tests</span></p>
+            <ul class="x-tags"><li>RAG</li><li>Evals</li><li>CI</li><li><a href="https://github.com/burlarakesh1458-sys/dronedocs-production-rag" target="_blank" rel="noopener">Code</a></li></ul>
+          </div>
+        </li>
+        <li class="x-row">
+          <div class="x-row__aside"><div class="x-thumb x-thumb--blank" aria-hidden="true">AI</div></div>
+          <div>
+            <h3><a href="http://rakeshburla.dpdns.org/fieldmate-local-slm-assistant/" target="_blank" rel="noopener">FieldMate · Offline SLM assistant <span class="x-arrow" aria-hidden="true">↗</span></a></h3>
+            <p>Ollama assistant that runs with no internet; schema-checked JSON output with retries. <span class="x-fig">85.8% field accuracy (qwen2.5:3b)</span></p>
+            <ul class="x-tags"><li>Ollama</li><li>Pydantic</li><li>Benchmarks</li><li><a href="https://github.com/burlarakesh1458-sys/fieldmate-local-slm-assistant" target="_blank" rel="noopener">Code</a></li></ul>
+          </div>
+        </li>
+        <li class="x-row">
+          <div class="x-row__aside"><div class="x-thumb x-thumb--blank" aria-hidden="true">AI</div></div>
+          <div>
+            <h3><a href="http://rakeshburla.dpdns.org/rag-observability-gating/" target="_blank" rel="noopener">RAG observability &amp; regression gating <span class="x-arrow" aria-hidden="true">↗</span></a></h3>
+            <p>OpenTelemetry/Langfuse tracing, p50/p95 latency and cost tracking, replay-based regression gate. <span class="x-fig">18 tests</span></p>
+            <ul class="x-tags"><li>Observability</li><li>OTel</li><li><a href="https://github.com/burlarakesh1458-sys/rag-observability-gating" target="_blank" rel="noopener">Code</a></li></ul>
+          </div>
+        </li>
+        <li class="x-row">
+          <div class="x-row__aside"><div class="x-thumb x-thumb--blank" aria-hidden="true">AI</div></div>
+          <div>
+            <h3><a href="http://rakeshburla.dpdns.org/toolcall-finetune-sft-dpo/" target="_blank" rel="noopener">Tool-call fine-tuning · SFT → DPO <span class="x-arrow" aria-hidden="true">↗</span></a></h3>
+            <p>QLoRA SFT then DPO with TRL to teach a small model clean tool calls. <span class="x-fig">Exact match 11% → 34% after SFT</span></p>
+            <ul class="x-tags"><li>TRL</li><li>LoRA</li><li>DPO</li><li><a href="https://github.com/burlarakesh1458-sys/toolcall-finetune-sft-dpo" target="_blank" rel="noopener">Code</a></li></ul>
+          </div>
+        </li>
+        <li class="x-row">
+          <div class="x-row__aside"><div class="x-thumb x-thumb--blank" aria-hidden="true">AI</div></div>
+          <div>
+            <h3><a href="http://rakeshburla.dpdns.org/skymate-realtime-voice-copilot/" target="_blank" rel="noopener">SkyMate · Real-time voice copilot <span class="x-arrow" aria-hidden="true">↗</span></a></h3>
+            <p>WebSocket speech-to-text → LLM → text-to-speech pipeline with a latency budget and failure handling. <span class="x-fig">~1.0 s p50 to first audio</span></p>
+            <ul class="x-tags"><li>Voice</li><li>WebSocket</li><li><a href="https://github.com/burlarakesh1458-sys/skymate-realtime-voice-copilot" target="_blank" rel="noopener">Code</a></li></ul>
+          </div>
+        </li>
+        <li class="x-row">
+          <div class="x-row__aside"><div class="x-thumb x-thumb--blank" aria-hidden="true">AI</div></div>
+          <div>
+            <h3><a href="http://rakeshburla.dpdns.org/mars-mission-rag-assistant/" target="_blank" rel="noopener">Mars mission research assistant <span class="x-arrow" aria-hidden="true">↗</span></a></h3>
+            <p>RAG over 60 NASA technical reports with hybrid retrieval, reranking and a refusal gate for off-topic questions. <span class="x-fig">100% page citation accuracy (17/17)</span></p>
+            <ul class="x-tags"><li>RAG</li><li>Ragas</li><li>NASA NTRS</li><li><a href="https://github.com/burlarakesh1458-sys/mars-mission-rag-assistant" target="_blank" rel="noopener">Code</a></li></ul>
+          </div>
+        </li>
+        <li class="x-row">
+          <div class="x-row__aside"><div class="x-thumb x-thumb--blank" aria-hidden="true">AI</div></div>
+          <div>
+            <h3><a href="http://rakeshburla.dpdns.org/restaurant-voice-agent/" target="_blank" rel="noopener">Restaurant voice agent <span class="x-arrow" aria-hidden="true">↗</span></a></h3>
+            <p>Takes bookings by voice with tool calling; answers allergen questions only from verified data. <span class="x-fig">0 allergen violations across 8 runs</span></p>
+            <ul class="x-tags"><li>Tool calling</li><li>Whisper</li><li>Guardrails</li><li><a href="https://github.com/burlarakesh1458-sys/restaurant-voice-agent" target="_blank" rel="noopener">Code</a></li></ul>
+          </div>
+        </li>
+        <li class="x-row">
+          <div class="x-row__aside"><div class="x-thumb x-thumb--blank" aria-hidden="true">AI</div></div>
+          <div>
+            <h3><a href="http://rakeshburla.dpdns.org/hybrid-comment-moderation/" target="_blank" rel="noopener">Hybrid comment moderation <span class="x-arrow" aria-hidden="true">↗</span></a></h3>
+            <p>Rules + logistic regression, with only low-confidence comments sent to an LLM and penalties to a human. <span class="x-fig">F1 0.633 vs 0.617, 9.2% sent to LLM</span></p>
+            <ul class="x-tags"><li>scikit-learn</li><li>LLM</li><li>Fairness</li><li><a href="https://github.com/burlarakesh1458-sys/hybrid-comment-moderation" target="_blank" rel="noopener">Code</a></li></ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="x-section" id="projects" aria-label="Projects">
             <h2 class="x-label">Projects</h2>
             <ul class="x-rows">
               <li class="x-row">
