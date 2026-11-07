@@ -1069,7 +1069,7 @@ tr.is-highlight > :last-child { box-shadow: 12px 0 var(--fill-tertiary); }
           <div class="x-row__aside"><div class="x-thumb x-thumb--blank" aria-hidden="true">AI</div></div>
           <div>
             <h3><a href="http://rakeshburla.dpdns.org/mars-mission-rag-assistant/" target="_blank" rel="noopener">Mars mission research assistant <span class="x-arrow" aria-hidden="true">↗</span></a></h3>
-            <p>RAG over 60 NASA technical reports with hybrid retrieval, reranking and a refusal gate for off-topic questions. <span class="x-fig">100% page citation accuracy (17/17)</span></p>
+            <p>RAG over 60 NASA technical reports with hybrid retrieval, reranking and a refusal gate for off-topic questions. <span class="x-fig">94.9% page citations (37/39), 98% correct refusals</span></p>
             <ul class="x-tags"><li>RAG</li><li>Ragas</li><li>NASA NTRS</li><li><a href="https://github.com/burlarakesh1458-sys/mars-mission-rag-assistant" target="_blank" rel="noopener">Code</a></li></ul>
           </div>
         </li>
@@ -1077,7 +1077,7 @@ tr.is-highlight > :last-child { box-shadow: 12px 0 var(--fill-tertiary); }
           <div class="x-row__aside"><div class="x-thumb x-thumb--blank" aria-hidden="true">AI</div></div>
           <div>
             <h3><a href="http://rakeshburla.dpdns.org/restaurant-voice-agent/" target="_blank" rel="noopener">Restaurant voice agent <span class="x-arrow" aria-hidden="true">↗</span></a></h3>
-            <p>Takes bookings by voice with tool calling; answers allergen questions only from verified data. <span class="x-fig">0 allergen violations across 8 runs</span></p>
+            <p>Takes bookings by voice with tool calling; answers allergen questions only from verified data. <span class="x-fig">0 allergen violations, 38/44 scenarios passed</span></p>
             <ul class="x-tags"><li>Tool calling</li><li>Whisper</li><li>Guardrails</li><li><a href="https://github.com/burlarakesh1458-sys/restaurant-voice-agent" target="_blank" rel="noopener">Code</a></li></ul>
           </div>
         </li>
@@ -1087,6 +1087,38 @@ tr.is-highlight > :last-child { box-shadow: 12px 0 var(--fill-tertiary); }
             <h3><a href="http://rakeshburla.dpdns.org/hybrid-comment-moderation/" target="_blank" rel="noopener">Hybrid comment moderation <span class="x-arrow" aria-hidden="true">↗</span></a></h3>
             <p>Rules + logistic regression, with only low-confidence comments sent to an LLM and penalties to a human. <span class="x-fig">F1 0.633 vs 0.617, 9.2% sent to LLM</span></p>
             <ul class="x-tags"><li>scikit-learn</li><li>LLM</li><li>Fairness</li><li><a href="https://github.com/burlarakesh1458-sys/hybrid-comment-moderation" target="_blank" rel="noopener">Code</a></li></ul>
+          </div>
+        </li>
+        <li class="x-row">
+          <div class="x-row__aside"><div class="x-thumb x-thumb--blank" aria-hidden="true">AI</div></div>
+          <div>
+            <h3><a href="http://rakeshburla.dpdns.org/vibesense-predictive-maintenance/" target="_blank" rel="noopener">VibeSense bearing fault diagnosis <span class="x-arrow" aria-hidden="true">↗</span></a></h3>
+            <p>CWRU vibration data, features vs 1D-CNN with leakage-aware splits; CNN runs in the browser via ONNX. <span class="x-fig">99.7% on an unseen load; 38–49% on unseen bearings, reported honestly</span></p>
+            <ul class="x-tags"><li>1D-CNN</li><li>ONNX</li><li>Predictive maintenance</li><li><a href="https://github.com/burlarakesh1458-sys/vibesense-predictive-maintenance" target="_blank" rel="noopener">Code</a></li></ul>
+          </div>
+        </li>
+        <li class="x-row">
+          <div class="x-row__aside"><div class="x-thumb x-thumb--blank" aria-hidden="true">AI</div></div>
+          <div>
+            <h3><a href="http://rakeshburla.dpdns.org/battery-health-rul-estimator/" target="_blank" rel="noopener">Battery health and RUL estimator <span class="x-arrow" aria-hidden="true">↗</span></a></h3>
+            <p>NASA Li-ion cells, leave-one-battery-out state-of-health and remaining-life models with conformal intervals. <span class="x-fig">RUL MAE 6.6 cycles vs 10.7 baseline</span></p>
+            <ul class="x-tags"><li>Gradient boosting</li><li>Conformal</li><li>NASA PCoE</li><li><a href="https://github.com/burlarakesh1458-sys/battery-health-rul-estimator" target="_blank" rel="noopener">Code</a></li></ul>
+          </div>
+        </li>
+        <li class="x-row">
+          <div class="x-row__aside"><div class="x-thumb x-thumb--blank" aria-hidden="true">AI</div></div>
+          <div>
+            <h3><a href="http://rakeshburla.dpdns.org/defectscope-anomaly-inspection/" target="_blank" rel="noopener">DefectScope visual inspection <span class="x-arrow" aria-hidden="true">↗</span></a></h3>
+            <p>PatchCore vs PaDiM anomaly detection on MVTec AD with heatmaps, served by FastAPI and in-browser ONNX. <span class="x-fig">Mean image AUROC 0.981 vs 0.929</span></p>
+            <ul class="x-tags"><li>PatchCore</li><li>Computer vision</li><li>ONNX</li><li><a href="https://github.com/burlarakesh1458-sys/defectscope-anomaly-inspection" target="_blank" rel="noopener">Code</a></li></ul>
+          </div>
+        </li>
+        <li class="x-row">
+          <div class="x-row__aside"><div class="x-thumb x-thumb--blank" aria-hidden="true">AI</div></div>
+          <div>
+            <h3><a href="http://rakeshburla.dpdns.org/flightlog-crash-analyst-agent/" target="_blank" rel="noopener">FlightLog crash analyst agent <span class="x-arrow" aria-hidden="true">↗</span></a></h3>
+            <p>Triage of 69 real ArduPilot/PX4 crash logs with rules plus an LLM agent over MCP tools. <span class="x-fig">Crash detection precision 0.68; every agent claim grounded</span></p>
+            <ul class="x-tags"><li>Agents</li><li>MCP</li><li>ArduPilot</li><li><a href="https://github.com/burlarakesh1458-sys/flightlog-crash-analyst-agent" target="_blank" rel="noopener">Code</a></li></ul>
           </div>
         </li>
       </ul>
